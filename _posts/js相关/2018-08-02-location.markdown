@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "js页面跳转不可返回"
+date:   2018-09-04 14:49:45 +0200
+categories: hpxuan
+---
+
+##### 替代跳转页面，不可返回  
+location.replace(url) 很实用

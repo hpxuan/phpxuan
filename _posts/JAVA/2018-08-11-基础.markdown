@@ -1,0 +1,68 @@
+---
+layout: post
+title:  "java基础"
+date:   2018-08-12 11:49:45 +0200
+categories: hpxuan
+---
+
+##### 课本上的知识  
+##### 关于i++和++i  
+> 没有分清楚过，丢人丢人  
+> i++ 先运算再赋值，a=i++,先运算a=i,然后i=i+1  
+> ++i 先赋值再运算，a=++i,先运算i=i+1,然后a=i
+
+---
+
+##### 随机数  
+**Math.random(),随机取0-1的double数字**  
+' **System.out.println(Math.random());** '  
+>> 第一次结果0.13234486094483777  
+>> 第二次结果0.3352224127641926
+
+---
+
+##### 数组排序  
+- Arrays.binarySearch()在数组中查找指定元素  
+- Arrays.sort(数组名); 升序排序
+
+---
+
+##### String常用方法  
+1. **comepareToIgnoreCase()**方法  
+2. 按照字典顺序比较两个字符串，忽略大小写  
+3. ' **String1.comepareToIgnoreCase(string2);** '  
+4. > 返回int类型，string1>string2,返回1  
+5. > string1=string2,返回0；string1<string2,返回负数
+
+1. ' **stirng1.equalsIgnoreCase(string2);** '  
+2. 忽略字符串大小进行比较
+
+1. **string1.toLowerCase();**返回小写
+
+2. **string1.toUpperCase();**返回大写
+
+3. **string1.concat(string2);**链接字符串，1在前
+
+4. '**string1.indexOf(int ch(或者String vvalue))；**'  
+> 搜索第一个出现ch字符或者value字符串的位置，返回int
+
+5. **string1.lastIndexOf();**  
+> 搜索最后一个出现的位置
+
+6. **string1.substring(int);**  
+> 提取从位置索引开始的字符串部分  
+> 或者提取两个索引中间的字符串
+
+7. **string1.trim();**  
+> 清除字符串前后的空格
+
+8. **string1.split(String a,int b);**  
+> 拆分字符串，返回数组形式  
+>> a为可选项，表示拆分字符串时使用一个或者多个字符  
+>> 如果不选，则返回包含所有单个字符的元素数组  
+>> b 可选项，用来限制返回数组中的元素个数
+
+#### StringBuffer  
+1. **toString();** 转换为String对象  
+2. **append();** 拼接字符串  
+3. **insert(位置，参数);** 参数插入指定位置并返回

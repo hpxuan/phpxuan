@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "css边框（border）"
+date:   2018-09-09 14:49:45 +0200
+categories: hpxuan
+---
+
+列表
+去掉前面的项目符号
+list-style-type：none；
+list-style：none；
+list-style-image：url（地址图片）；
+
+
+*边框线  
+注意：html的都可以添加  
+上  
+border-top-width:粗细；  
+border-top-color: 颜色；  
+border-top-style:solid ；//实线 dashed虚线 dotted点 *
+ 
+*简写  
+border-top：粗细 类型 颜色；  
+下  
+border-bottom：粗细 类型 颜色；  
+左  
+border-left：粗细 类型 颜色；   
+右  
+border-right：粗细 类型 颜色；  
+rules="all" 表格<table>的属性合并表格的边框线  
+css  border-collapse：collapse；//合并表格的边框线*  

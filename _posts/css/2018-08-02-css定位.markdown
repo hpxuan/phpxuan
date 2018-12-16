@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "css定位"
+date:   2018-09-11 14:49:45 +0200
+categories: hpxuan
+---
+position : absolute  
+relative 相对定位 相对于原本标准为止偏移 盒子仍在标准流中  
+absolute 绝对定位 从标准流脱离 相对于包含他的盒子为基准偏移  
+fixed 固定定位 跟绝对定位雷瑟 区别在于以游览器为基准进行定位 当拖动滚动条 依旧保持对象位置不变(小广告啊这不是)  
+z-index 堆叠 上下堆叠 属性可设置证书也可设置负数 当两个层z-index值一样时 保持原有的高地覆盖关系  
+
+1. position 设置定位 static没有定位、 absolute绝对定位、 relative相对定位、 fixed固定定位  
+2. top 设置上偏移 固定值百分比  
+3. right 右  
+4. bottom 下  
+5. left 左  
+6. z-index 堆叠顺序

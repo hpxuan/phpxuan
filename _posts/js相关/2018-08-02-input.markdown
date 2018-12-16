@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "关于input"
+date:   2018-09-03 14:49:45 +0200
+categories: hpxuan
+---
+
+##### jquery获取input的value  1. $("input[name='rd']:checked").val();
+
+##### iquery设置按钮不可点击  1. $("#btnselect").attr("disabled","disabled");  2. 点击恢复 $("#id").removeAttr("disabled");
+
+##### css去除 input type="date" 的 上下三角 和 X号  
+1. input[type=date]::-webkit-inner-spin-button { visibility: hidden; }  
+2. input[type=date]::-webkit-clear-button { visibility: hidden; }  
+
+关于input type="date" 的value，max，min赋值，赋值格式为2018-09-10，不可为2018-9-5格式

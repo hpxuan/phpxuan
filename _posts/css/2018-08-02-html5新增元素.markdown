@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "html5"
+date:   2018-09-11 14:49:45 +0200
+categories: hpxuan
+---
+
+**表单和控件**  
+控件类型  
+1. email 电子邮箱格式的文本框  
+2. url url地址的文本框  
+3. number 输入数字的文本框  
+4. range 可设置输入范围的文本框，有min和max属性  
+5. date（日，月，年） month（月，年） week（周，年） time（小时，分钟）  
+6. datetime（UTC时间） datetime-local（本地时间）  
+7. search 搜索
+
+**新增表单和控件属性**  
+1. placeholder 内容为空显示提示  
+2. required 验证内容是否为空，为空无法提交  
+3. novalidate 取消验证  
+4. multiple 允许选择多个值  
+5. autofocus 自动获取焦点  
+6. form 指定控件所属表单  
+7. list 指定控件的选项列表  
+8. pattem 定义用于验证输入内容的正则表达式

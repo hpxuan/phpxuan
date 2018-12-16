@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "js获取url的返回值"
+date:   2018-09-04 14:49:45 +0200
+categories: hpxuan
+---
+
+##### 我就先试了一下，直接访问是有值的，这个就简答了
+
+---
+
+#### 雅虎查询  
+##### 下边是代码，远程获取（好像有BUG，感觉这个东西有延迟）  
+>  $.ajax({  
+>> url: 'http://query.yahooapis.com/v1/public/yql',  
+>> dataType:"jsonp",  
+>> data: {  
+>>> **//这个是雅虎查询语句,json是查询类型，url是你要查询的网址，记得编码格式**  
+>>> q: "select * from json url="+q_url,  
+>>> **//这个是设置返回值类型**  
+>>> format: "json"  
+>> },  
+>> success: function (d) {  
+>> });  
+##### 我是获取微信api返回值，就是感觉这个有延迟，也没深入研究
+
+ ---
+ 
+#### 重点戏来了 *AJAX*  
+1. ##### *ajax*有个返回值jsonp，专门是对付跨域返回的  
+2. ##### 里面有个*async*属性，默认是true，即为异步方式  
+3. ##### 会继续执行ajax后边的东西，知道返回数据，触发seccess或者异常触发error，两个线程  
+4. ##### 设置成false，变为同步，没返回值之前不执行其他操作  
+5. #### ajax  
+
+> $.ajax({  
+>> url : urla,  
+>> //用什么方式请求我想网站是有要求的  
+>> type: 'GET',  
+>> dataType: 'JSONP',  
+>> //设置这个纯粹是玩  
+>> async: false,  
+>> success: function(qqq){  
+>>> //js对象转换json字符串  
+>>> var www=JSON.stringify(qqq);  
+>>> //这个是准换为js对象,这两个根据自己情况用  
+>>> var www=JSON.parse(qqq);  
+>>> //js的函数，可计算某个字符串  
+>>> eval('www.'+"你想去的参数名称");  
+>>}  
+
+async. 默认是true，即为异步方式，如果是false这个ajax请求为同步请求，success之后打印日志。  
+cache：true 如果当前请求有缓存的话，直接使用缓存。如果该属性设置为 false，则每次都会向服务器请求  

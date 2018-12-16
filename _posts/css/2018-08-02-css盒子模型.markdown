@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "css，盒子模型与浮动"
+date:   2018-09-09 14:49:45 +0200
+categories: hpxuan
+---
+
+*盒子模型*
+> **边框(border)：围绕元素内容和内边距的一条或多条线  内边距(pandding):内容与边框的距离  外边距(margin) 边框与外面周围的间隙**  
+> **轮廓(outline): 绘制元素周围的一条线**
+
+*浮动*  
+> **默认情况下，盒子的宽度不在伸展，而是根据盒子里面的内容和高度来确定**  
+
+*内边距padding：内容和边框的距离*
+
+*padding-top：*   
+*padding-right：*   
+*padding-bottom：*   
+*padding-left:*  
+
+*简写  
+padding：10px 22px 23 px 23px;   
+padding: 上 右 下 左；*
+
+*padding：10px 22px 23px;  
+padding：上 左右 下；*
+
+*padding：10px 22px ；  
+padding： 上下 左右；*
+
+*padding：10px ；  
+padding：上右下左；*
+
+*外边距margin：边框以外的距离  
+（详情可以参考padding同理）*
+
+*margin-top：  
+margin-right：  
+margin-bottom：  
+margin-left：*
+
+*浮动：float  
+float：left；  
+float：right；  
+特点：  
+设置浮动的元素 不占空间  
+设置浮动之后一定是块元素  
+设置浮动的元素层级高于普通元素*
+
+*横排就要设置浮动//li标签可以考虑 浮动*
+
+*margin 居中  
+水平居中 margin：0 auto；*
+
+*margin-left：auto；  
+margin-right：auto；*
+
+*{margin：0；
+padding：0；
+}//初始化*

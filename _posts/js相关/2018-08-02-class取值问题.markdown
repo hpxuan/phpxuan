@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "js获取class值"
+date:   2018-09-03 14:49:45 +0200
+categories: hpxuan
+---
+##### 用这个取元素class为num_dish的信息  
+##### 返回值是一个伪数组，不能直接brr[0]这样取值  
+##### 这样能取出属性的text值
+
+>> var brr = document.getElementsByClassName('num_dish');
+>> for(var i=0,len=brr.length;i<len;i++)
+>> {
+>>> alert(brr[i].innerHTML);
+>> }
